@@ -678,7 +678,7 @@ a:not([href]):not([tabindex]):hover {
    Video promo Style
    ========================================================================== */
 .video-promo {
-  background: url(../img/bg_2.jpg) fixed;
+  background: url(https://lablog.oss-cn-beijing.aliyuncs.com/sqg/%E4%B8%8A%E6%B8%85%E9%98%812.jpg) fixed;
   background-position: cover;
   position: relative;
 }
