@@ -1,39 +1,26 @@
-# SQG
+# 我的世界上清阁服务器官网开源项目
 
 #### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+{**以下是本项目的简介及说明**
+上清阁是一个我的世界服务器，服主：联安。本开源项目为上清阁服务器官网源码。您可以参考、学习、借鉴本项目。如果您想预览效果，请前往 [https://svr.lablog.net]https://svr.lablog.net}
 
-#### 软件架构
-软件架构说明
+#### 网站架构
+网站首页index.html
+js位于js文件夹
+css位于css文件夹
+video文件夹内的视频为首页最上方循环播放的视频
+img文件夹用于存放网站图片
+fonts文件夹内为网站的字体、贴图等内容
 
 
-#### 安装教程
+#### 使用教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+略
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+网站首页为index.html
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 码云特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5.  码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+联安
