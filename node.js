@@ -1,28 +1,26 @@
-const http = require("http"),
-      fs = require("fs"),
-      path = require("path"),
-      url = require("url");
+var express = require('express')
+var fs = require('fs')
+var path = require('path')
+var http = require('http')
+var https = require('https')
+var ejs = require('ejs')
+var app = express();
+app.use(express.static(path.join(__dirname, '../SQG')));
+app.set('views', path.join(__dirname, '../SQG'));
+app.set('view engine', 'ejs');
 
-// 获取当前目录
-var root = path.resolve();
-
-// 创建服务器
-var sever = http.createServer(function(request,response){
-    var pathname = url.parse(request.url).pathname;
-    var filepath = path.join(root,pathname);
-    // 获取文件状态
-    fs.stat(filepath,function(err,stats){
-        if(err){
-            // 发送404响应
-            response.writeHead(404);
-            response.end("404 Not Found.");
-        }else{
-            // 发送200响应
-            response.writeHead(200);
-            // response是一个writeStream对象，fs读取html后，可以用pipe方法直接写入
-            fs.createReadStream(filepath).pipe(response);
-        }
-    });
+var router = express.Router();
+router.get('/', function (req, res, next) {
+    res.render('index',
+        {
+            image: 'https://lablog-images.oss-cn-beijing.aliyuncs.com/images/lablog.gif',
+        });
 });
-sever.listen(80);
-console.log('Sever is running at http://localhost:80/');
+router.get('/ping', function (req, res, next) {
+    res.end('pong');
+});
+app.use('/', router);
+var httpServer = http.createServer(app);
+httpServer.listen(80);
+var events = require('events');
+var eventEmitter = new events.EventEmitter();
