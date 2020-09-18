@@ -16,5 +16,5 @@ app.get('/', function(req, res, next) {
         });
 });
 
-app.listen(4080);
-console.log("监听端口 4080");
+app.listen(80);
+console.log("监听端口 80");
